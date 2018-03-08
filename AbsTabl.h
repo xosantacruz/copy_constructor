@@ -1,9 +1,3 @@
-/* 
- * Author: Dr. Mark E. Lehr
- * Created on February 25, 2018, 8:54 AM
- * Specification for the abstract Table Class
- */
-
 #ifndef ABSTABL_H
 #define	ABSTABL_H
 
@@ -25,4 +19,4 @@ class AbsTabl {
         virtual int getData(int,int) const = 0;
 };
 
-#endif	/* ABSTABL_H */
+#endif
