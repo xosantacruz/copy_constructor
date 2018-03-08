@@ -10,14 +10,20 @@
 
 #include "AbsRow.h"
 
-class RowAray:public AbsRow{
+class RowAray : public AbsRow {
     public:
         RowAray(unsigned int);
         virtual ~RowAray();
-        int getSize()const{return size;}
-        int getData(int i)const{
-            if(i>=0&&i<size)return rowData[i];
-            else return 0;}
+        int getSize() const {return size;}
+        
+        int getData(int i) const {
+            if ( i >= 0 && i < size) {
+                return rowData[i];
+            } else {
+                return 0;
+            }
+        }
+
         void setData(int,int);
 };
 

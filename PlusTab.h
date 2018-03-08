@@ -9,9 +9,10 @@
 
 #include "Table.h"
 
-class PlusTab:public Table{
+class PlusTab : public Table {
     public:
-        PlusTab(unsigned int r,unsigned int c):Table(r,c){};
+        // Unsigned means that the integer can never be negative
+        PlusTab(unsigned int r,unsigned int c) : Table(r,c) {};
         PlusTab operator+(const PlusTab &);
 };
 

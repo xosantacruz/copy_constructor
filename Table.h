@@ -10,14 +10,14 @@
 
 #include "AbsTabl.h"
 
-class Table:public AbsTabl{
+class Table : public AbsTabl {
     public:
         Table(unsigned int,unsigned int);
         Table(const Table &);
         virtual ~Table();
-        int getSzRow()const {return szRow;}
-        int getSzCol()const {return szCol;}
-        int getData(int,int)const;
+        int getSzRow() const {return szRow;}
+        int getSzCol() const {return szCol;}
+        int getData(int,int) const;
         void setData(int,int,int);
 };
 
